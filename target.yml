@@ -4,3 +4,7 @@
   become: yes
   connection: ssh
   gather_facts: yes
+  task:
+  - name: Install HTTPD on linux
+    action: yum name=httpd state=installed 
+
